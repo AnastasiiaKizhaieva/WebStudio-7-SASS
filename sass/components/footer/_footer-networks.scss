@@ -1,0 +1,25 @@
+/* footer-networks */
+.networks--footer {
+    margin: 0;
+}
+
+.networks__item--footer:not(:last-child) {
+    margin-right: 10px;
+}
+
+.networks__link--footer {
+    background-color: var(--footer-icon-bgc);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.networks__icon--footer {
+    fill: var(--hero-text-white);
+}

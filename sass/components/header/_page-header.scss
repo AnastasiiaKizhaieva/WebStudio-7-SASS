@@ -1,0 +1,146 @@
+/* Header */
+.header {
+    border: 1px solid #ECECEC;
+    border-style: none none solid none;
+
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.header .container {
+    display: flex;
+}
+
+
+
+/* Navigation */
+
+/* NAV-LEFT */
+
+.nav-left {
+    display: flex;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+
+    margin: 0px;
+    padding-left: 0px;
+}
+
+.site-nav__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--primary-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1, 14;
+    letter-spacing: 0.02em;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+
+.site-nav__link--current {
+    position: relative;
+
+    &.studio::after {
+        position: absolute;
+        bottom: 0;
+    
+        content: '';
+    
+        display: block;
+        min-width: 100%;
+        min-height: 4px;
+    
+        background-image: url(../images/SVG/hover-line.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        }
+
+    &.portfolio::after {
+        position: absolute;
+        bottom: 0;
+    
+        content: '';
+    
+        display: block;
+        min-width: 100%;
+        min-height: 4px;
+    
+        background-image: url(../images/SVG/hover2.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+
+.site-nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+/* NAV-RIGHT */
+
+.nav-right {
+    display: flex;
+    align-items: center;
+
+    margin-left: auto;
+}
+
+.auth-nav {
+    display: flex;
+    align-items: center;
+
+    padding: 0px;
+}
+
+.auth-nav__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--secondary-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1, 14;
+    letter-spacing: 0.02em;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.auth-nav__icon {
+    fill: #757575;
+    margin-right: 5px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .auth-nav__link:hover &,
+    .auth-nav__link:focus & {
+        fill: #2196F3;
+    }
+}
+
+.nav-right li:not(:last-child) {
+    margin-right: 50px;
+}

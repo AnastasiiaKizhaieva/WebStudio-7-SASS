@@ -1,0 +1,123 @@
+/* OТПРАВКА ФОРМЫ */
+.form {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.form__title {
+    margin-bottom: 12px;
+}
+
+.form__lable {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-bottom: 10px;
+
+    font-size: 12px;
+    line-height: 1, 17;
+    letter-spacing: 0.01em;
+    color: var(--secondary-text-color);
+
+    position: relative;
+}
+
+
+.form__input {
+    width: 100%;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    margin-top: 4px;
+    padding: 14px 15px;
+    padding-left: 42px;
+
+    outline: none;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        border-color: var(--accent-color);
+    }
+}
+
+.form__img {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .form__input:focus+& {
+        fill: var(--accent-color);
+    }
+}
+
+.form__textarea {
+    margin-top: 4px;
+    padding: 14px 15px;
+    padding-left: 16px;
+
+    width: 100%;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    outline: none;
+
+    resize: none;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        border-color: var(--accent-color);
+    }
+}
+
+
+.policy__label {
+    font-size: 14px;
+    line-height: 1, 71;
+    color: var(--secondary-text-color);
+
+    display: block;
+}
+
+.policy__link {
+    text-decoration: underline;
+    color: var(--accent-color);
+}
+
+.policy__checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    position: absolute;
+}
+
+.policy__img {
+    border: 2px solid var(--primary-text-color);
+    border-radius: 2px;
+    margin-right: 7px;
+
+    .policy__checkbox:checked+& {
+        background-color: var(--accent-color);
+        border-radius: 2px;
+        border-color: var(--accent-color);
+        background-origin: border-box;
+    }
+}
+

@@ -1,0 +1,36 @@
+/* footer-location */
+.footer-location {
+    width: 231px;
+    margin-right: 30px;
+}
+
+.footer__logo {
+    color: var(--hero-text-white);
+    margin: 0;
+}
+
+.adress__street {
+    color: var(--hero-text-white);
+
+    font-size: 14px;
+    line-height: 1, 71;
+    font-style: normal;
+
+    margin-top: 20px;
+    margin-bottom: 9px;
+}
+
+.adress__list {
+    padding: 0;
+}
+
+.adress__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.adress__link {
+    color: var(--footer-text-color);
+    font-size: 14px;
+    line-height: 1,71;
+    font-style: normal;
+}
